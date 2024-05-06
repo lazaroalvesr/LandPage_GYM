@@ -22,7 +22,7 @@ export const Coach = () => {
                         <CoachButton>Explore mais</CoachButton>
                     </CoachDiv>
                     <CoachDivImgs>
-                        <CoachDivImg src="/img/Personal_Training_Mentory.jpg" alt="Persoanl mostrando informações no seu tablet para sua aluna." />
+                        <CoachDivImg src="/img/Instrucoes_treino.jpg" alt="Persoanl mostrando informações no seu tablet para sua aluna." />
                     </CoachDivImgs>
                 </CoachContainer>
                 <Trainer />

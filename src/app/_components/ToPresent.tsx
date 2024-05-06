@@ -9,7 +9,7 @@ export const ToPresent = () => {
             <ContainerGlobal>
                 <ToPresentContainer>
                     <ToPresentDivImg>
-                        <ToPresentImg src="/img/Personal_trainner.jpg" alt="Duas Pessoas fazendo exercicio juntas"/>
+                        <ToPresentImg src="/img/Pessoas_Treinando.jpg" alt="Duas Pessoas fazendo exercicio juntas"/>
                         <ToPresentDiv>
                             <ToPresentTitleImg>
                                 <ToPresentTextSpan>Construir a forma perfeita </ToPresentTextSpan>

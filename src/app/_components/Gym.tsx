@@ -50,7 +50,7 @@ export const Gym = () => {
                             </GymListItem>
                         </GymItensInfo>
                         <GymDivImg>
-                            <GymImg src="/img/Equipamento_2.jpg" alt="Foto da academia" />
+                            <GymImg src="/img/Academia.jpg" alt="Foto da academia" />
                         </GymDivImg>
                     </GymInfos>
                 </GymContainer>

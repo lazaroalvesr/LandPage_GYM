@@ -72,7 +72,6 @@ export const CoachDivImgs = styled.div`
     display: flex;
     gap: 30px;
     @media (min-width: 320px) and (max-width: 480px) {
-        overflow-y: scroll;
         padding-left: 20px;
         padding-right: 18px;
         padding-top: 40px;
@@ -89,6 +88,8 @@ export const CoachDivVideo = styled.video`
 
 export const CoachDivImg = styled.img`
     width: 400px;
-    height: 400px;
     border-radius: 40px;
+    @media (min-width: 320px) and (max-width: 480px) {
+       width: 100%;
+    } 
 `

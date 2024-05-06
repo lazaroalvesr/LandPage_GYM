@@ -8,10 +8,10 @@ export const Trainer = () => {
                 <TrainerH1> <TrainerP>Os Treinadores</TrainerP>mais experientes</TrainerH1>
             </TrainerDivText>
             <CoachesDiv>
-                <CoachesCard src="/img/Trainer-1.jpg" title="Treinador Senior" subTitle="Diego Fortaleza"/>
-                <CoachesCard src="/img/Trainer-2.jpg" title="Treinadora Senior" subTitle="Camila Fitness"/>
-                <CoachesCard src="/img/Trainer-3.jpg" title="Treinador Senior" subTitle="Bruno Máximo"/>
-                <CoachesCard src="/img/Trainer-4.jpg" title="Treinador Senior" subTitle="Ricardo Condor"/>
+                <CoachesCard src="/img/Trainer_4.jpg" title="Treinador Senior" subTitle="Diego Fortaleza"/>
+                <CoachesCard src="/img/Trainer_1.jpg" title="Treinadora Senior" subTitle="Camila Fitness"/>
+                <CoachesCard src="/img/Trainer_3.jpg" title="Treinador Senior" subTitle="Bruno Máximo"/>
+                <CoachesCard src="/img/Trainer_2.jpg" title="Treinador Senior" subTitle="Ricardo Condor"/>
             </CoachesDiv>
         </TrainerContainer>
     )
