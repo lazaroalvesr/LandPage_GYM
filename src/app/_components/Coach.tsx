@@ -22,9 +22,6 @@ export const Coach = () => {
                         <CoachButton>Explore mais</CoachButton>
                     </CoachDiv>
                     <CoachDivImgs>
-                        {/* <CoachDivVideo controls={false} autoPlay loop muted>
-                            <source src="/img/videos/Training_Video.mp4" type="video/mp4" aria-label="Video de um levantando peso com o braço." />
-                        </CoachDivVideo> */}
                         <CoachDivImg src="/img/Personal_Training_Mentory.jpg" alt="Persoanl mostrando informações no seu tablet para sua aluna." />
                     </CoachDivImgs>
                 </CoachContainer>
