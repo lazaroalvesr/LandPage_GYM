@@ -1,8 +1,8 @@
 'use client'
 
 import { useEffect, useState } from "react"
-import { ContainerGlobal } from "./styles/Global.styles"
-import { ButtonMobile, HeaderBg, HeaderContainer, HeaderDivIcon, HeaderIconImg, HeaderLi, HeaderTitle, HeaderUl } from "./styles/Header.styles"
+import { BgPrimary, ContainerGlobal } from "./styles/Global.styles"
+import { ButtonMobile, HeaderContainer, HeaderDivIcon, HeaderIconImg, HeaderLi, HeaderTitle, HeaderUl } from "./styles/Header.styles"
 import { IoMdClose } from "react-icons/io"
 import { CiMenuFries } from "react-icons/ci"
 
@@ -32,7 +32,7 @@ export const Header = () => {
     }, [ativo])
 
     return (
-        <HeaderBg>
+        <BgPrimary>
             <ContainerGlobal>
                 <HeaderContainer>
                     <HeaderDivIcon>
@@ -57,6 +57,6 @@ export const Header = () => {
                     ) : null}
                 </HeaderContainer>
             </ContainerGlobal>
-        </HeaderBg>
+        </BgPrimary>
     )
 }

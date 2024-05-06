@@ -4,3 +4,15 @@
   box-sizing: border-box;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+:root {
+  --bg-primary: #282d31; 
+  --bg-secondary: #1a1f23; 
+  --bg-optional: #FF5757; 
+
+
+  --cor-primary: white; 
+  --cor-secondary: #FF5757; 
+  --cor-optional: #9b9d9e; 
+}
+

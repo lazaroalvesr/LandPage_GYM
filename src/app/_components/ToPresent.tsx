@@ -1,14 +1,15 @@
-import { ContainerGlobal } from "./styles/Global.styles"
-import { ToPresentButtonToSign, ToPresentBg, ToPresentContainer, ToPresentDivImg, ToPresentImg, ToPresentTextSpan, ToPresentTitleImg, ToPresentDiv, ToPresentGraphic, ToPresentImgGraphic, TopresentGraphicName, TopresentGraphicSpan, ToPrensentGraphicDiv, ToPresentExperience, ToPresentExperienceDivInfos, ToPresentExperienceInfosTitle, ToPresentExperienceInfosSubName, ToPresentInfoCoachs, ToPresentUserPictureDiv, ToPresentUserPicture, ToPresentUserPictureBorder, ToPresentCoachName } from "./styles/ToPresent.styles"
+import { ProgramPresent } from "./ProgramPresent";
+import { BgSecondary, ContainerGlobal } from "./styles/Global.styles"
+import { ToPresentButtonToSign, ToPresentContainer, ToPresentDivImg, ToPresentImg, ToPresentTextSpan, ToPresentTitleImg, ToPresentDiv, ToPresentGraphic, ToPresentImgGraphic, TopresentGraphicName, TopresentGraphicSpan, ToPrensentGraphicDiv, ToPresentExperience, ToPresentExperienceDivInfos, ToPresentExperienceInfosTitle, ToPresentExperienceInfosSubName, ToPresentInfoCoachs, ToPresentUserPictureDiv, ToPresentUserPicture, ToPresentUserPictureBorder, ToPresentCoachName, ToPresentProgramContainer, ToPresentProgramSpan, ToPresentProgramTitle } from "./styles/ToPresent.styles"
 import { MdOutlineArrowOutward } from "react-icons/md";
 
 export const ToPresent = () => {
     return (
-        <ToPresentBg>
+        <BgSecondary>
             <ContainerGlobal>
                 <ToPresentContainer>
                     <ToPresentDivImg>
-                        <ToPresentImg src="/img/Personal_trainner.jpg" />
+                        <ToPresentImg src="/img/Personal_trainner.jpg" alt="Duas Pessoas fazendo exercicio juntas"/>
                         <ToPresentDiv>
                             <ToPresentTitleImg>
                                 <ToPresentTextSpan>Construir a forma perfeita </ToPresentTextSpan>
@@ -16,7 +17,7 @@ export const ToPresent = () => {
                             <ToPresentButtonToSign>faça uma adesão <MdOutlineArrowOutward /></ToPresentButtonToSign>
                         </ToPresentDiv>
                         <ToPresentGraphic>
-                            <ToPresentImgGraphic src="/img/Icons/Grafico_Barra.png" alt="Gráfico de Barra" />
+                            <ToPresentImgGraphic src="/img/Icons/Icon_Grafico_Barra.png" alt="Gráfico de Barra" />
                             <ToPrensentGraphicDiv>
                                 <TopresentGraphicName>250 kcal</TopresentGraphicName>
                                 <TopresentGraphicSpan>Calorias Queimadas</TopresentGraphicSpan>
@@ -39,7 +40,7 @@ export const ToPresent = () => {
                         <ToPresentInfoCoachs>
                             <ToPresentUserPictureDiv>
                                 <ToPresentUserPictureBorder>
-                                    <ToPresentUserPicture src="/img/Coach_1.jpg"  alt="Treinador"/>
+                                    <ToPresentUserPicture src="/img/Coach_1.jpg" alt="Treinador" />
                                 </ToPresentUserPictureBorder>
                                 <ToPresentUserPictureBorder>
                                     <ToPresentUserPicture src="/img/Coach_2.jpg" alt="Treinador" />
@@ -54,8 +55,12 @@ export const ToPresent = () => {
                             <ToPresentCoachName>Treinadores Experientes</ToPresentCoachName>
                         </ToPresentInfoCoachs>
                     </ToPresentDivImg>
+                    <ToPresentProgramContainer>
+                        <ToPresentProgramTitle> <ToPresentProgramSpan>Programa</ToPresentProgramSpan> Projetado para você</ToPresentProgramTitle>
+                    </ToPresentProgramContainer>
+                    <ProgramPresent />
                 </ToPresentContainer>
             </ContainerGlobal>
-        </ToPresentBg>
+        </BgSecondary>
     )
 }

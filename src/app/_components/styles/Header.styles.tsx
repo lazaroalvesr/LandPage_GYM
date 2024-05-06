@@ -2,17 +2,12 @@
 
 import styled from "styled-components";
 
-export const HeaderBg = styled.section`
-    width: 100%;
-    background-color: #323335;
-`
-
 export const HeaderIconImg = styled.img`
     width: 80px;
 `
 
 export const HeaderTitle = styled.h3`
-    color: white;
+    color: var(--cor-primary);
     font-size: 20px;
 `
 
@@ -25,7 +20,7 @@ export const HeaderDivIcon = styled.div`
     }   
 `
 
-export const HeaderContainer = styled.div`
+export const HeaderContainer = styled.nav`
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -43,11 +38,11 @@ export const HeaderUl = styled.ul`
     gap: 40px;
     @media (min-width: 320px) and (max-width: 480px) {
       flex-direction: column;
-      border-top: 2px solid #494949;
+      border-top: 2px solid var(--cor-optional);
       position: absolute;
       width: 100%;
       align-items: center;
-      background-color: #323335;
+      background-color: var(--bg-primary);
       top: 80px;
       z-index: 1;
       padding-top: 50px;
@@ -59,18 +54,18 @@ export const HeaderUl = styled.ul`
 `
 
 export const HeaderLi = styled.li`
-    color: white;
+    color: var(--cor-primary);
     list-style: none;
+    cursor: pointer;
 `
 
 export const ButtonMobile = styled.button`
 display: none;
 @media (min-width: 320px) and (max-width: 480px) {
     display: flex;
-    background-color: #323335;
+    background-color: var(--bg-primary);
     border: none;
     position: absolute;
     right: 14px;
     }
-
 `
