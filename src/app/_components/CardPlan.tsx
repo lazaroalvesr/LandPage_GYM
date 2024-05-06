@@ -18,7 +18,7 @@ export const CardPlan = ({ scale, backGroundColor, items, Title, Price}: CardPla
                 </PlanCardItemsUl>
             </PlanCardContainer>
             <PlanCardLink href="/">
-                <PlanCardButton backGroundColor={backGroundColor}>Junte-se Agora <PlanCardButtonIcon src="/img/Icons/Icon_ArrowTop_White.png" /></PlanCardButton>
+                <PlanCardButton backGroundColor={backGroundColor}>Junte-se Agora <PlanCardButtonIcon src="/img/Icons/Icon_ArrowTop_White.png" alt="Icone de seta"/></PlanCardButton>
             </PlanCardLink>
         </PlanCard>
     )
