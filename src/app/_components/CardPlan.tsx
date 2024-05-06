@@ -5,13 +5,13 @@ export const CardPlan = ({ scale, backGroundColor, items, Title, Price}: CardPla
     return (
         <PlanCard scale={scale}>
             <PlanCardContainer>
-                <PlanCardIcon src="/img/Icons/Icon_Medal.png" />
+                <PlanCardIcon src="/img/Icons/Icon_Medal.png" alt="Icone de Medalha" />
                 <PlanCardH1>{Title}</PlanCardH1>
                 <PlanCardPrice>R$ {Price} <PlanCardPriceSecondy>/mês</PlanCardPriceSecondy></PlanCardPrice>
                 <PlanCardItemsUl>
                     {items?.map((item, index) => (
                         <PlanCardItemLi key={index}>
-                            <PlanCardItemImg src="/img/Icons/Icon_Check.png" />
+                            <PlanCardItemImg src="/img/Icons/Icon_Check.png" alt="Icone de check"/>
                             {item}
                         </PlanCardItemLi>
                     ))}

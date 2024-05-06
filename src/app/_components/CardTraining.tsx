@@ -9,7 +9,7 @@ export const CardTraining = ({ href, alt, name }: CardTrainingProps) => {
                 <TrainingDiv>
                     <TrainingImgName>{name}</TrainingImgName>
                     <TrainingDivIconArrowTop>
-                        <TrainingIconArrowTop src="/img/Icons/Icon_Arrow_Top.png" />
+                        <TrainingIconArrowTop src="/img/Icons/Icon_Arrow_Top.png" alt="Icone de seta" />
                     </TrainingDivIconArrowTop>
                 </TrainingDiv>
             </TrainingDivImg>
