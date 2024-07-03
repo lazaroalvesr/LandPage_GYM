@@ -18,7 +18,7 @@ export const CustomerGym = () => {
                   Recomendo!"
                 />
                 <CustomerGymCard
-                    name="Rafael Costa"
+                    name=" Ana Santos"
                     src="/img/Customer_2.jpg"
                     alt="Foto de um cara exercicando dando murro em um saco de pancada"
                     about="Minha experiência na academia superou 
@@ -28,7 +28,7 @@ export const CustomerGym = () => {
                      alcançar meus objetivos. Recomendo sem hesitação"
                 />
                 <CustomerGymCard
-                    name="Ana Santos"
+                    name="Rafael Costa"
                     src="/img/Customer_3.jpg"
                     alt="Foto mulher fazendo pose com um equipamento de academia na mão"
                     about="A academia proporcionou uma experiência 
