@@ -9,16 +9,6 @@ export interface LinkRedirectProps {
     alt: string
 }
 
-// export interface CardProjectsProps {
-//     src: string
-//     alt: string
-//     name: string
-//     subName: string
-//     hoverText: string
-//     href: string
-//     skillsText: string[]
-// }
-
 export interface CardProps {
     border?: string;
 }
@@ -53,4 +43,8 @@ export interface CustomerGymProps {
 export interface FooterListProps{
     title: string
     items: string[]
+}
+
+export interface HeaderUlProps{
+    ativo?: boolean
 }

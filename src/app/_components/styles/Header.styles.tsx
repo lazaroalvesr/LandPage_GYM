@@ -1,5 +1,6 @@
 'use client'
 
+import { HeaderUlProps } from "@/lib/interface";
 import styled from "styled-components";
 
 export const HeaderIconImg = styled.img`
@@ -32,11 +33,12 @@ export const HeaderContainer = styled.nav`
     }
     `
 
-export const HeaderUl = styled.ul`
+export const HeaderUl = styled.ul<HeaderUlProps>`
     display: flex;
     flex-direction: row;
     gap: 40px;
     @media (min-width: 320px) and (max-width: 480px) {
+      display:${({ ativo }) => ativo ? 'flex' : 'none'};
       flex-direction: column;
       border-top: 2px solid var(--cor-optional);
       position: absolute;

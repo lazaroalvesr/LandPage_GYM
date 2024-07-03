@@ -13,24 +13,6 @@ export const Header = () => {
         setAtivo((!ativo))
     }
 
-    const handleResize = () => {
-        if (window.innerWidth < 728 && !ativo) {
-            setAtivo(true)
-        }
-
-        if (window.innerWidth < 426 && ativo) {
-            setAtivo(false)
-        }
-    }
-
-    useEffect(() => {
-        window.addEventListener("resize", handleResize)
-
-        return () => {
-            window.removeEventListener('resize', handleResize)
-        }
-    }, [ativo])
-
     return (
         <BgPrimary>
             <ContainerGlobal>
@@ -45,8 +27,7 @@ export const Header = () => {
                     <ButtonMobile onClick={toggle} aria-label="Menu Mobile">
                         {ativo ? < IoMdClose size={30} color="white" /> : <CiMenuFries size={30} color="white" />}
                     </ButtonMobile>
-                    {ativo || (typeof window !== 'undefined' && window.innerWidth >= 728) ? (
-                        <HeaderUl>
+                        <HeaderUl ativo={ativo}>
                             <HeaderLi>Home</HeaderLi>
                             <HeaderLi>Sobre Nós</HeaderLi>
                             <HeaderLi>Serviços</HeaderLi>
@@ -54,7 +35,6 @@ export const Header = () => {
                             <HeaderLi>Agenda</HeaderLi>
                             <HeaderLi>Galeria</HeaderLi>
                         </HeaderUl>
-                    ) : null}
                 </HeaderContainer>
             </ContainerGlobal>
         </BgPrimary>
