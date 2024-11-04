@@ -1,9 +1,22 @@
+"use client"
+
 import { ProgramPresent } from "./ProgramPresent";
 import { BgSecondary, ContainerGlobal } from "./styles/Global.styles"
 import { ToPresentButtonToSign, ToPresentContainer, ToPresentDivImg, ToPresentImg, ToPresentTextSpan, ToPresentTitleImg, ToPresentDiv, ToPresentGraphic, ToPresentImgGraphic, TopresentGraphicName, TopresentGraphicSpan, ToPrensentGraphicDiv, ToPresentExperience, ToPresentExperienceDivInfos, ToPresentExperienceInfosTitle, ToPresentExperienceInfosSubName, ToPresentInfoCoachs, ToPresentUserPictureDiv, ToPresentUserPicture, ToPresentUserPictureBorder, ToPresentCoachName, ToPresentProgramContainer, ToPresentProgramSpan, ToPresentProgramTitle } from "./styles/ToPresent.styles"
 import { MdOutlineArrowOutward } from "react-icons/md";
+import AOS from 'aos'; 
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 export const ToPresent = () => {
+
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            once: true, 
+        });
+    }, []);
+
     return (
         <BgSecondary>
             <ContainerGlobal>
@@ -55,7 +68,7 @@ export const ToPresent = () => {
                             <ToPresentCoachName>Treinadores Experientes</ToPresentCoachName>
                         </ToPresentInfoCoachs>
                     </ToPresentDivImg>
-                    <ToPresentProgramContainer>
+                    <ToPresentProgramContainer data-aos="fade-up">
                         <ToPresentProgramTitle> <ToPresentProgramSpan>Programa</ToPresentProgramSpan> Projetado para você</ToPresentProgramTitle>
                     </ToPresentProgramContainer>
                     <ProgramPresent />

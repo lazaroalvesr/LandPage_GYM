@@ -1,8 +1,21 @@
+"use client"
+
+import { useEffect } from "react";
 import { ToPresentProgramCard, ToPresentProgramCardDiv, ToPresentProgramDivAbout, ToPresentProgramDivContainer, ToPresentProgramDivImg, ToPresentProgramDivImgBorder, ToPresentProgramDivTitle } from "./styles/ProgramPresent.styles"
+import AOS from 'aos'; 
+import 'aos/dist/aos.css';
 
 export const ProgramPresent = () => {
+
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            once: true, 
+        });
+    }, []);
+    
     return (
-        <ToPresentProgramCard>
+        <ToPresentProgramCard data-aos="fade-up" >
             <ToPresentProgramCardDiv>
                 <ToPresentProgramDivContainer>
                     <ToPresentProgramDivImg src="/img/Icons/Icon_Peso_Academia.png" alt="Icone de Peso de academia" />

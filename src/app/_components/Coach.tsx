@@ -1,12 +1,24 @@
+"use client"
+
+import { useEffect } from "react";
 import { Trainer } from "./Trainer"
 import {  CoachAbout, CoachButton, CoachContainer, CoachDiv, CoachDivImg, CoachDivImgs, CoachDivVideo, CoachH1, CoachP } from "./styles/Coach.styles"
 import { BgSecondary, ContainerGlobal } from "./styles/Global.styles"
+import AOS from 'aos'; 
+import 'aos/dist/aos.css';
 
 export const Coach = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            once: true, 
+        });
+    }, []);
+
     return (
         <BgSecondary>
             <ContainerGlobal>
-                <CoachContainer>
+                <CoachContainer data-aos="fade-up">
                     <CoachDiv>
                         <CoachH1>Você está procurando <CoachP>um treinador?</CoachP></CoachH1>
                         <CoachAbout>Nossos treinadores de ginástica experientes

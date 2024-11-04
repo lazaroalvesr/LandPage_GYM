@@ -1,9 +1,22 @@
+"use client"
+
+import { useEffect } from "react";
 import { CustomerGymCard } from "./CustomerGymCard"
 import { CustomerGymContainer, CustomerGymDivContainer, CustomerGymSpan, CustomerGymh1 } from "./styles/CustomerGym.styles"
+import AOS from 'aos'; 
+import 'aos/dist/aos.css';
 
 export const CustomerGym = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            once: true, 
+        });
+    }, []);
+
+
     return (
-        <CustomerGymContainer>
+        <CustomerGymContainer data-aos="fade-up">
             <CustomerGymh1>O que nossos clientes</CustomerGymh1>
             <CustomerGymSpan>pensa sobre nossa academia?</CustomerGymSpan>
             <CustomerGymDivContainer>

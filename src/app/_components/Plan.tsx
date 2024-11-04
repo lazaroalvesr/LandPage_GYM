@@ -1,12 +1,25 @@
+"use client"
+
+import { useEffect } from "react"
 import { CardPlan } from "./CardPlan"
 import { CustomerGym } from "./CustomerGym"
 import { BgSecondary } from "./styles/Global.styles"
 import { PlanCardPlans, PlanContainer, PlanH1, PlanSpan, PlansCardContainer } from "./styles/Plan.styles"
+import AOS from 'aos'; 
+import 'aos/dist/aos.css';
 
 export const Plan = () => {
+
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            once: true, 
+        });
+    }, []);
+
     return (
         <BgSecondary>
-            <PlanContainer>
+            <PlanContainer data-aos="fade-up">
                 <PlanH1>Melhor plano <PlanSpan>para você</PlanSpan></PlanH1>
                 <PlansCardContainer>
                     <PlanCardPlans>

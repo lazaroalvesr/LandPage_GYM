@@ -1,9 +1,21 @@
+"use client"
+
+import { useEffect } from "react";
 import { CoachesCard } from "./CoachesCard"
 import { CoachesDiv, TrainerContainer, TrainerDivText, TrainerH1, TrainerP } from "./styles/Trainer.styles"
+import AOS from 'aos'; 
+import 'aos/dist/aos.css';
 
 export const Trainer = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            once: true, 
+        });
+    }, []);
+    
     return (
-        <TrainerContainer>
+        <TrainerContainer data-aos="fade-up">
             <TrainerDivText>
                 <TrainerH1> <TrainerP>Os Treinadores</TrainerP>mais experientes</TrainerH1>
             </TrainerDivText>

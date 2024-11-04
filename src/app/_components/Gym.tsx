@@ -1,11 +1,23 @@
+"use client"
+
+import { useEffect } from "react";
 import { BgPrimary, ContainerGlobal } from "./styles/Global.styles"
 import {  GymContainer, GymDivImg, GymImg, GymInfos, GymItensInfo, GymListItem, GymListItemImg, GymListItemP, GymListItemTitle, GymListText, GymSpan, Gymh1 } from "./styles/Gym.styles"
+import AOS from 'aos'; 
+import 'aos/dist/aos.css';
 
 export const Gym = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            once: true, 
+        });
+    }, []);
+    
     return (
         <BgPrimary>
             <ContainerGlobal>
-                <GymContainer>
+                <GymContainer data-aos="fade-up">
                     <Gymh1>Por que Escolher <GymSpan>Nossa Academia</GymSpan></Gymh1>
                     <GymInfos>
                         <GymItensInfo>
