@@ -1,7 +1,7 @@
 # LandPage_GYM-Pro
 
 ![App Screenshot](./public/img/gympro.png)
-c.p
+
 **LandPage_GYM** é uma landing page projetada para academias, com foco na conversão de visitantes em novos alunos. Desenvolvida com **Next.js**, **React**, **TailwindCSS** e **TypeScript**, ela oferece um design moderno e responsivo, proporcionando uma excelente experiência tanto em dispositivos móveis quanto em desktops.
 
 ## Tecnologias Utilizadas
