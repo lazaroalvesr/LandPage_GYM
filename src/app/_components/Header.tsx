@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import { BgPrimary, ContainerGlobal } from "./styles/Global.styles"
 import { ButtonMobile, HeaderContainer, HeaderDivIcon, HeaderIconImg, HeaderLi, HeaderTitle, HeaderUl } from "./styles/Header.styles"
 import { IoMdClose } from "react-icons/io"
@@ -27,14 +27,14 @@ export const Header = () => {
                     <ButtonMobile onClick={toggle} aria-label="Menu Mobile">
                         {ativo ? < IoMdClose size={30} color="white" /> : <CiMenuFries size={30} color="white" />}
                     </ButtonMobile>
-                        <HeaderUl ativo={ativo}>
-                            <HeaderLi>Home</HeaderLi>
-                            <HeaderLi>Sobre Nós</HeaderLi>
-                            <HeaderLi>Serviços</HeaderLi>
-                            <HeaderLi>Comunidade</HeaderLi>
-                            <HeaderLi>Agenda</HeaderLi>
-                            <HeaderLi>Galeria</HeaderLi>
-                        </HeaderUl>
+                    <HeaderUl ativo={ativo}>
+                        <HeaderLi>Home</HeaderLi>
+                        <HeaderLi>Sobre Nós</HeaderLi>
+                        <HeaderLi>Serviços</HeaderLi>
+                        <HeaderLi>Comunidade</HeaderLi>
+                        <HeaderLi>Agenda</HeaderLi>
+                        <HeaderLi>Galeria</HeaderLi>
+                    </HeaderUl>
                 </HeaderContainer>
             </ContainerGlobal>
         </BgPrimary>
